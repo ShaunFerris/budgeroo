@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 const Budget = () => {
     return (
-        <div className='alert alert-secondary'>
+        <div className="alert alert-secondary">
             <span>Budget $1000</span>
         </div>
     );
