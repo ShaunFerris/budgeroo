@@ -24,7 +24,7 @@ const AddExpenseForm = () => {
                     ></input>
                 </div>
                 <div className="col-sm mt-auto">
-                    <Button variant="primary">Save</Button>
+                    <Button variant="primary" className="mt-3">Save</Button>
                 </div>
             </div>
         </form>

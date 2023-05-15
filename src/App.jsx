@@ -8,7 +8,7 @@ import AddExpenseForm from "./components/AddExpenseForm";
 const App = () => {
     return (
         <div className='container'>
-            <h1 className='mt-3'>Budgeroo Budget Tracker</h1>
+            <h1 className='mt-3 text-center'>Budgeroo Budget Tracker</h1>
             <div className='row mt-3'>
                 <div className='col-sm'>
                     <Budget />
