@@ -2,6 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import { Button } from 'react-bootstrap';
+import { FaBeer } from "react-icons/fa";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +30,14 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Button variant="primary">Primary <FaBeer /></Button>{' '}
+      <Button variant="secondary">Secondary <FaBeer /></Button>{' '}
+      <Button variant="success">Success <FaBeer /></Button>{' '}
+      <Button variant="warning">Warning <FaBeer /></Button>{' '}
+      <Button variant="danger">Danger <FaBeer /></Button>{' '}
+      <Button variant="info">Info <FaBeer /></Button>{' '}
+      <Button variant="light">Light <FaBeer /></Button>{' '}
+      <Button variant="dark">Dark <FaBeer /></Button> <Button variant="link">Link</Button>
     </>
   )
 }
