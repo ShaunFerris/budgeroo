@@ -1,7 +1,5 @@
-import React from "react";
-
 import { AppProvider } from "./context/AppContext";
-import Budget from "./components/Budget";
+import { Budget } from "./components/Budget";
 import Remaining from "./components/Remaining";
 import ExpenseTotal from "./components/ExpenseTotal";
 import ExpenseList from "./components/ExpenseList";
