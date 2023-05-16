@@ -8,11 +8,11 @@ const AppReducer = (state, action) => {
 };
 
 const initialState = {
-    budget: 2000,
+    budget: 1000,
     expenses: [
-        { id: 12, name: shopping, cost: 40 },
-        { id: 12, name: shopping, cost: 40 },
-        { id: 12, name: shopping, cost: 40 },
+        { id: 12, name: "shopping", cost: 100 },
+        { id: 12, name: "shopping", cost: 40 },
+        { id: 12, name: "shopping", cost: 40 },
     ]
 };
 
@@ -22,13 +22,14 @@ export const AppProvider = (props) => {
     const [state, dispatch] = useReducer(AppReducer, initialState);
 
     return (
-        <AppContext.Provider value={{
-            budget: state.budget,
-            expenses: state.expenses,
-            dispatch
-        }}
+        <AppContext.Provider
+            value={{
+                budget: state.budget,
+                expenses: state.expenses,
+                dispatch
+            }}
         >
             {props.children}
         </AppContext.Provider>
-    )
+    );
 };
