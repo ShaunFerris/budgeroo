@@ -24,7 +24,7 @@ const ExpenseList = () => {
                 className="form-control mb-2 mr-sm-2"
                 type="text"
                 onChange={handleChange}
-                value={"Type to search..."}
+                placeholder={"Type to search..."}
             />
             <ul className="list-group">
                 {filteredExpenses.map((expense) => (
